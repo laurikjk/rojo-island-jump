@@ -1,0 +1,14 @@
+{
+  "name": "my-new-game",
+  "tree": {
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+
+    "ServerStorage": {
+      "$path": "src/serverstorage"
+    },
+
+    "Workspace": {}
+  }
+}

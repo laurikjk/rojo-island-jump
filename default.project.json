@@ -1,12 +1,27 @@
 {
   "name": "my-new-game",
   "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$path": "src/shared",
+      "Packages": {
+        "$path": "src/packages"
+      }
+    },
+
     "ServerScriptService": {
       "$path": "src/server"
     },
 
     "ServerStorage": {
       "$path": "src/serverstorage"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
     },
 
     "Workspace": {}

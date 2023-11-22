@@ -1,12 +1,15 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
-local Roact = require(ReplicatedStorage.Packages.Roact)
+local Roact = require(ReplicatedStorage.Packages.roact)
 
 local app = Roact.createElement("ScreenGui", {}, {
-    HelloWorld = Roact.createElement("TextLabel", {
-        Size = UDim2.new(0, 400, 0, 300),
-        Text = "Hello, Roact!"
+    HelloButton = Roact.createElement("TextButton", {
+        Size = UDim2.new(0, 150, 0, 40),
+        Text = "Upgrade Jump (5 coins)",
+        [Roact.Event.Activated] = function()
+            print("Hello, Roact!")
+        end
     })
 })
 

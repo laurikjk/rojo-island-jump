@@ -1,16 +1,20 @@
 local PlayerData = {}
+
 PlayerData.COIN_KEY_NAME = "Coins"
+PlayerData.JUMP_KEY_NAME = "Jump"
 
 local playerData = {
   --[[
-    [userId: string] = {
-      ["Coins"] = coinAmount: number
-    }
-  ]]
+		[userId: string] = {
+			["Coins"] = coinAmount: number,
+			["Jump"] = jumpPower: number
+		}
+	--]]
 }
 
 local DEFAULT_PLAYER_DATA = {
-  [PlayerData.COIN_KEY_NAME] = 0
+  [PlayerData.COIN_KEY_NAME] = 0,
+  [PlayerData.JUMP_KEY_NAME] = 0,
 }
 
 local function getData(player)
